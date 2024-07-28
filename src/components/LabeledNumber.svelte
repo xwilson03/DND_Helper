@@ -1,12 +1,12 @@
 <script lang="ts">
     export let label: String;
+    export let value: number;
     export let container_style: String = "";
     export let input_style: String = "";
     export let min: number = 0;
     export let max: number = 99;
 
     let id = label.toLowerCase().replace(/\s/g, "");
-    let value: number = min;
 
     function update() {
         // Clamp input stat value

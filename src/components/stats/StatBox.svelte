@@ -2,7 +2,7 @@
     export let stat_name: string;
     export let min: number = 1;
     export let max: number = 30;
-    let value: number = min;
+    export let value: number;
     $: mod = getMod(value);
 
     function update() {
