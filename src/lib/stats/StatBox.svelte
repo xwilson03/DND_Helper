@@ -30,7 +30,7 @@
         bind:value={value}
         on:blur={update}
     >
-    <div>
+    <div class={value > 11 ? "text-emerald-200" : value < 10 ? "text-rose-300" : "text-amber-100"}>
         {mod}
     </div>
 </div>
