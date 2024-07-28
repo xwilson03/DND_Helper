@@ -1,5 +1,5 @@
 <script>
-    import StatBox from "./StatBox.svelte";
+    import StatBox from "@components/stats/StatBox.svelte";
 </script>
 
 <section class="pane flex gap-x-1 gap-y-3">

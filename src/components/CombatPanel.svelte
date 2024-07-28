@@ -1,5 +1,5 @@
 <script lang="ts">
-    import LabeledNumber from "./LabeledNumber.svelte";
+    import LabeledNumber from "@components/LabeledNumber.svelte";
 </script>
 
 <section class="pane flex flex-col items-center pb-2 pt-0">
