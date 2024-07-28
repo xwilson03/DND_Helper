@@ -1,7 +1,7 @@
 <script>
-	import Counter from "./lib/Counter.svelte";
+    import StatLine from "./lib/stats/StatLine.svelte";
 </script>
 
-<main class="min-h-screen bg-zinc-900 text-white flex flex-col items-center justify-center">
-    <Counter />
+<main class="flex h-screen w-screen bg-zinc-900 text-white">
+    <StatLine />
 </main>

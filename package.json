@@ -1,6 +1,6 @@
 {
-  "name": "vite-svelte-electron-tailwind",
-  "description": "Vite + Svelte + Electron + Tailwind",
+  "name": "Beholder",
+  "description": "A D&D companion app.",
   "license": "MIT",
   "private": true,
   "version": "0.0.0",
@@ -22,6 +22,7 @@
     "@electron-forge/maker-squirrel": "^6.1.1",
     "@electron-forge/maker-zip": "^6.1.1",
     "@sveltejs/vite-plugin-svelte": "^2.0.3",
+    "@tailwindcss/forms": "^0.5.7",
     "autoprefixer": "^10.4.14",
     "concurrently": "^8.0.1",
     "cross-env": "^7.0.3",
