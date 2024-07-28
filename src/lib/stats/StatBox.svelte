@@ -1,12 +1,19 @@
-<script>
-    export let stat_name;
-    export let min = 0;
-    export let max = 20;
-    let data;
+<script lang="ts">
+    export let stat_name: string;
+    export let min: number = 1;
+    export let max: number = 30;
+    let value: number = min;
+    $: mod = getMod(value);
 
-    function validate() {
-        if (data < min) data = min;
-        else if (data > max) data = max;
+    function update() {
+        // Clamp input stat value
+        if (value < min) value = min;
+        else if (value > max) value = max;
+    }
+
+    function getMod(value: number) {
+        let mod = Math.floor(value/2) - 5;
+        return `${mod >= 0 ? "+" : ""}${mod}`;
     }
 </script>
 
@@ -20,7 +27,10 @@
         type="number"
         min=0
         max=20
-        bind:value={data}
-        on:input={validate}
+        bind:value={value}
+        on:blur={update}
     >
+    <div>
+        {mod}
+    </div>
 </div>
