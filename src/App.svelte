@@ -1,7 +1,7 @@
 <script>
-    import NamePlate from "./lib/NamePlate.svelte";
-    import StatLine from "./lib/stats/StatLine.svelte";
-    import CombatPanel from "./lib/CombatPanel.svelte";
+    import NamePlate from "./components/NamePlate.svelte";
+    import StatLine from "./components/stats/StatLine.svelte";
+    import CombatPanel from "./components/CombatPanel.svelte";
 </script>
 
 <main class="flex h-screen w-screen bg-zinc-900 text-white">
