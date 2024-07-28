@@ -22,7 +22,7 @@
         {stat_name}
     </label>
     <input
-        class="aspect-square w-10 rounded-md bg-zinc-600 text-center text-2xl outline-none outline-1 outline-offset-0 transition-all hover:outline hover:outline-zinc-400 focus:outline focus:outline-white"
+        class="aspect-square w-10 rounded-md bg-zinc-700 text-center text-2xl outline-none outline-1 outline-offset-0 transition-all hover:outline hover:outline-zinc-500 focus:bg-zinc-600 focus:outline focus:outline-white"
         id={stat_name}
         type="number"
         min=0
