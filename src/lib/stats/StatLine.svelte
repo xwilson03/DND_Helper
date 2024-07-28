@@ -2,7 +2,7 @@
     import StatBox from "./StatBox.svelte";
 </script>
 
-<section class="flex flex-col items-stretch gap-x-1 gap-y-3 bg-zinc-800 p-1">
+<section class="flex gap-x-1 gap-y-3 bg-zinc-800 p-1">
     <StatBox stat_name="STR" />
     <StatBox stat_name="DEX" />
     <StatBox stat_name="CON" />

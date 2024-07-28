@@ -3,5 +3,7 @@
 </script>
 
 <main class="flex h-screen w-screen bg-zinc-900 text-white">
-    <StatLine />
+    <div>
+        <StatLine />
+    </div>
 </main>
