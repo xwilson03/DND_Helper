@@ -24,7 +24,7 @@
         {label}
     </label>
     <input
-        class="rounded-md bg-zinc-700 text-center text-4xl outline-none outline-1 outline-offset-0 transition-all hover:outline hover:outline-zinc-500 focus:bg-zinc-600 focus:outline focus:outline-white {input_style}"
+        class="shadow-inner shadow-black/65 rounded-md bg-zinc-700 text-center text-4xl outline-none outline-1 outline-offset-0 transition-all hover:outline hover:outline-zinc-500 focus:bg-zinc-600 focus:outline focus:outline-white {input_style}"
         id={id}
         type="number"
         min={min}
