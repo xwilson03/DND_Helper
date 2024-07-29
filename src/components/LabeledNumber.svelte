@@ -7,8 +7,12 @@
     export let max: number = 99;
 
     let id = label.toLowerCase().replace(/\s/g, "");
+    let last = value;
 
     function update() {
+        if (value == undefined) value = last;
+        else last = value;
+
         // Clamp input stat value
         if (value < min) value = min;
         else if (value > max) value = max;
