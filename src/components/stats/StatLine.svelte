@@ -4,10 +4,10 @@
 </script>
 
 <section class="pane flex gap-x-1 gap-y-3">
-    <StatBox stat_name="STR" value={$data.strength}/>
-    <StatBox stat_name="DEX" value={$data.dexterity}/>
-    <StatBox stat_name="CON" value={$data.constitution}/>
-    <StatBox stat_name="INT" value={$data.intelligence}/>
-    <StatBox stat_name="WIS" value={$data.wisdom}/>
-    <StatBox stat_name="CHA" value={$data.charisma}/>
+    <StatBox label="STR" value={$data.strength}/>
+    <StatBox label="DEX" value={$data.dexterity}/>
+    <StatBox label="CON" value={$data.constitution}/>
+    <StatBox label="INT" value={$data.intelligence}/>
+    <StatBox label="WIS" value={$data.wisdom}/>
+    <StatBox label="CHA" value={$data.charisma}/>
 </section>

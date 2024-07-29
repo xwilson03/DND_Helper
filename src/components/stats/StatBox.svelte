@@ -1,15 +1,9 @@
 <script lang="ts">
-    export let stat_name: string;
-    export let min: number = 1;
-    export let max: number = 30;
+    import LabeledNumber from "../LabeledNumber.svelte";
+
+    export let label: string;
     export let value: number;
     $: mod = getMod(value);
-
-    function update() {
-        // Clamp input stat value
-        if (value < min) value = min;
-        else if (value > max) value = max;
-    }
 
     function getMod(value: number) {
         let mod = Math.floor(value/2) - 5;
@@ -17,20 +11,14 @@
     }
 </script>
 
-<div class="mx-1 flex flex-col items-center">
-    <label for={stat_name}>
-        {stat_name}
-    </label>
-    <input
-        class="aspect-square w-10 rounded-md bg-zinc-700 text-center text-2xl outline-none outline-1 outline-offset-0 transition-all hover:outline hover:outline-zinc-500 focus:bg-zinc-600 focus:outline focus:outline-white"
-        id={stat_name}
-        type="number"
-        min=0
-        max=20
-        bind:value={value}
-        on:blur={update}
-    >
+<LabeledNumber
+    label={label}
+    input_style="aspect-square w-10 text-2xl"
+    container_style="mx-1"
+    bind:value={value}
+    max={30}
+>
     <div class={value > 11 ? "text-emerald-200" : value < 10 ? "text-rose-300" : "text-amber-100"}>
         {mod}
     </div>
-</div>
+</LabeledNumber>
