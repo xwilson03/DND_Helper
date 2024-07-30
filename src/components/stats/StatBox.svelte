@@ -13,7 +13,7 @@
 
 <LabeledNumber
     label={label}
-    input_style="aspect-square w-10 text-2xl"
+    input_style="aspect-square w-10 text-xl"
     container_style="mx-1"
     bind:value={value}
     max={30}
