@@ -9,12 +9,12 @@
             label="HP"
             bind:value={$data.health}
             bind:max={$data.max_health}
-            input_style="h-16 w-32"
+            input_style="h-16 w-32 text-4xl"
         />
         <LabeledNumber
             label="Temporary HP"
             bind:value={$data.temp_health}
-            input_style="h-16 w-32"
+            input_style="h-16 w-32 text-4xl"
         />
     </div>
     <div class="flex gap-x-6 pb-1">
