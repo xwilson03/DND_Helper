@@ -3,5 +3,5 @@
 </script>
 
 <section class="pane flex justify-center gap-x-1 p-1 align-middle">
-    <div class="text-center">{$data.name}, {$data.race} {$data.class} {$data.level}</div>
+    <div class="text-center text-xl">{$data.name}, {$data.race} {$data.class} {$data.level}</div>
 </section>
