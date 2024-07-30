@@ -9,5 +9,6 @@
         <NamePlate />
         <StatLine />
         <CombatPanel />
+        <div class="pane flex-grow"/>
     </div>
 </main>
