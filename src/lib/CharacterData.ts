@@ -1,7 +1,6 @@
-import type { Writable } from "svelte/store";
-import { writable } from "svelte/store";
+import { writable, type Writable } from "svelte/store";
 
-type CharacterData = {
+export interface CharacterData {
     // Metadata
     name: string
     race: string
