@@ -2,12 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Variables */
+:root {
+    --scrollbar-width: 5px;
+    --scrollbar-color: rgba(45%, 45%, 45%, 0.5)
+}
+
+
+/* Number Inputs */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
+
+/* Scrollbar */
+::-webkit-scrollbar, ::-webkit-scrollbar-corner {
+    background-color: transparent;
+    width: var(--scrollbar-width);
+}
+
+:hover > ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color);
+    border-radius: 2px;
+}
+
+
+/* Tailwind Classes */
 @layer components {
     .pane {
         @apply bg-zinc-800 px-2 py-4 outline outline-1 outline-zinc-700
