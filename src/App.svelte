@@ -3,6 +3,7 @@
     import StatLine from "./components/stats/StatLine.svelte";
     import CombatPanel from "./components/CombatPanel.svelte";
     import EquipmentPanel from "./components/EquipmentPanel.svelte";
+    import SpellList from "./components/SpellList.svelte";
 </script>
 
 <main class="flex h-screen w-screen bg-zinc-900 text-white">
@@ -12,5 +13,10 @@
         <CombatPanel />
         <EquipmentPanel />
         <div class="pane flex-grow"/>
+    </div>
+    <div class="flex flex-grow"/>
+    <div class="flex flex-col">
+        <SpellList/>
+        <div class="pane flex-grow">
     </div>
 </main>
