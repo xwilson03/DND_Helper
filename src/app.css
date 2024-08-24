@@ -32,6 +32,6 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Tailwind Classes */
 @layer components {
     .pane {
-        @apply bg-zinc-800 px-2 py-4 outline outline-1 outline-zinc-700
+        @apply select-none bg-zinc-800 px-2 py-4 outline outline-1 outline-zinc-700
     }
 }

@@ -4,6 +4,7 @@
     import CombatPanel from "./components/CombatPanel.svelte";
     import EquipmentPanel from "./components/EquipmentPanel.svelte";
     import SpellList from "./components/SpellList.svelte";
+    import Divider from "./components/Divider.svelte";
 </script>
 
 <main class="flex h-screen w-screen bg-zinc-900 text-white">
@@ -14,6 +15,7 @@
         <EquipmentPanel />
         <div class="pane flex-grow"/>
     </div>
+    <Divider />
     <div class="flex flex-grow"/>
     <div class="flex flex-col">
         <SpellList/>
