@@ -15,11 +15,15 @@
     }
 
     function drag(event: MouseEvent) {
-        console.log(event.clientX, event.clientY);
+        console.log(event.movementX);
     }
 
 </script>
 
-<div class="w-[10px] bg-zinc-600">
-    <div class="relative -left-[50%] h-[200%] w-[200%] cursor-col-resize" on:mousedown={startDrag}/>
+<div class="flex h-full w-full">
+    <slot name=1/>
+    <div class="w-[2px] bg-zinc-600"> <div class="relative -left-[50%] h-full w-[200%] cursor-col-resize" on:mousedown={startDrag}/> </div>
+    <slot name=2/>
+    <div class="w-[2px] bg-zinc-600"> <div class="relative -left-[50%] h-full w-[200%] cursor-col-resize" on:mousedown={startDrag}/> </div>
+    <slot name=3/>
 </div>

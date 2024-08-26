@@ -4,21 +4,22 @@
     import CombatPanel from "./components/CombatPanel.svelte";
     import EquipmentPanel from "./components/EquipmentPanel.svelte";
     import SpellList from "./components/SpellList.svelte";
-    import Divider from "./components/Divider.svelte";
+    import SplitPane from "./components/SplitPane.svelte";
 </script>
 
 <main class="flex h-screen w-screen bg-zinc-900 text-white">
-    <div class="flex flex-col">
-        <NamePlate />
-        <StatLine />
-        <CombatPanel />
-        <EquipmentPanel />
-        <div class="pane flex-grow"/>
-    </div>
-    <Divider />
-    <div class="flex flex-grow"/>
-    <div class="flex flex-col">
-        <SpellList/>
-        <div class="pane flex-grow">
-    </div>
+    <SplitPane>
+        <div slot=1 class="flex flex-col">
+            <NamePlate />
+            <StatLine />
+            <CombatPanel />
+            <EquipmentPanel />
+            <div class="pane flex-grow"/>
+        </div>
+        <div slot=2 class="flex flex-grow"/>
+        <div slot=3 class="flex flex-col">
+            <SpellList/>
+            <div class="pane flex-grow">
+        </div>
+    </SplitPane>
 </main>
