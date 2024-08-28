@@ -18,8 +18,8 @@
         if (event.movementX == 0) return;
 
         if (event.movementX < 0) {
-            console.log(event.movementX + " to right element.");
-            console.log(-event.movementX + " to left element.");
+            console.log(-event.movementX + " to right element.");
+            console.log(event.movementX + " to left element.");
         }
         else {
             console.log(-event.movementX + " to right element.");
