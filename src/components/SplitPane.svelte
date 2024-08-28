@@ -6,10 +6,10 @@
 <div class="flex h-full w-full">
     <slot name="a"/>
 
-    {#if $$slots.b}
-        <Divider/>
-        <slot name="b"/>
-    {/if}
+    <Divider/>
+    <slot name="b">
+        <div class="flex-grow"/>
+    </slot>
     
     {#if $$slots.c}
         <Divider/>

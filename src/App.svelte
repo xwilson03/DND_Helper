@@ -16,7 +16,6 @@
             <EquipmentPanel />
             <div class="pane flex-grow"/>
         </div>
-        <div slot="b" class="flex flex-grow"/>
         <div slot="c" class="flex flex-col">
             <SpellList/>
             <div class="pane flex-grow">
