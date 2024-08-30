@@ -1,18 +1,23 @@
 <script>
     import Divider from "./Divider.svelte";
 
+    let a, b, c;
 </script>
 
 <div class="flex h-full w-full">
-    <slot name="a"/>
+    <div bind:this={a} class="flex">
+        <slot name="a"/>
+    </div>
 
-    <Divider/>
-    <slot name="b">
-        <div class="flex-grow"/>
-    </slot>
-    
+    <Divider left={a} right={b}/>
+    <div bind:this={b} class={$$slots.b ? "flex" : "flex flex-grow"}>
+        <slot name="b"/>
+    </div>
+
     {#if $$slots.c}
-        <Divider/>
+    <Divider left={b} right={c}/>
+    <div bind:this={c} class="flex">
         <slot name="c"/>
+    </div>
     {/if}
 </div>
