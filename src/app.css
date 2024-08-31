@@ -28,6 +28,11 @@ input[type="number"]::-webkit-inner-spin-button {
     border-radius: 2px;
 }
 
+.splitpanes__splitter {
+    width: 4px !important;
+    background-color: #52525b !important;
+    border-color: #52525b !important;
+}
 
 /* Tailwind Classes */
 @layer components {
