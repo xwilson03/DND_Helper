@@ -3,7 +3,7 @@
     import {character_data as data} from "@lib/CharacterData";
 </script>
 
-<section class="pane flex gap-x-1 gap-y-3">
+<section class="pane flex justify-center gap-x-1 gap-y-3">
     <StatBox label="STR" bind:value={$data.strength}/>
     <StatBox label="DEX" bind:value={$data.dexterity}/>
     <StatBox label="CON" bind:value={$data.constitution}/>
