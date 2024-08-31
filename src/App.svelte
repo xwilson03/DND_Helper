@@ -13,15 +13,15 @@
             <NamePlate />
             <StatLine />
             <CombatPanel />
-            <EquipmentPanel />
             <div class="pane flex-grow"/>
         </Pane>
         <Pane>
             <div class="h-full w-full bg-zinc-900"/>
         </Pane>
         <Pane class="flex flex-col">
+            <EquipmentPanel />
             <SpellList/>
             <div class="pane flex-grow">
-            </Pane>
+        </Pane>
     </SplitPane>
 </main>
